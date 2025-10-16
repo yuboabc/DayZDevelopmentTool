@@ -64,3 +64,17 @@ DayZDevelopmentTool/
 - 若需新增地图任务以调试：
   - 按照现有格式编辑 `./.vscode/launch.json` 添加调试条目。
   - 将对应地图任务文件放置于 `./data/Mpmissions/`。
+
+## 在 Windows 中启用 PowerShell 脚本执行权限
+- 以管理员身份打开 PowerShell（或 PowerShell 7 `pwsh`）。
+- 查看当前执行策略：`Get-ExecutionPolicy -List`
+- 推荐设置为当前用户允许本地脚本执行：
+  - `Set-ExecutionPolicy RemoteSigned -Scope CurrentUser`
+- 仅在当前会话临时放行（推荐用于一次性执行）：
+  - `Set-ExecutionPolicy Bypass -Scope Process -Force`
+- 如果脚本来自网络下载，取消文件阻止：
+  - `Unblock-File -Path .\run.ps1`
+- 一次性运行脚本（不改全局策略）：
+  - `powershell -ExecutionPolicy Bypass -File .\run.ps1`
+  - 或 `pwsh -NoProfile -ExecutionPolicy Bypass -File .\run.ps1`
+- 常见错误 “running scripts is disabled on this system” 多由执行策略过于严格导致，按以上步骤调整即可。

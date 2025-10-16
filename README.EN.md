@@ -65,3 +65,17 @@ DayZDevelopmentTool/
   - Edit `./.vscode/launch.json` following the existing entries.
   - Place mission files under `./data/Mpmissions/`.
 - Server configuration samples (e.g., `serverDZ*.cfg`) can be kept under `./data/ServerDZ_Cfg/` if needed.
+
+## Enable PowerShell Script Execution on Windows
+- Open PowerShell as Administrator (or PowerShell 7 `pwsh`).
+- Check current policy: `Get-ExecutionPolicy -List`
+- Recommended for the current user (allow local scripts):
+  - `Set-ExecutionPolicy RemoteSigned -Scope CurrentUser`
+- Temporarily allow in the current session (one-off):
+  - `Set-ExecutionPolicy Bypass -Scope Process -Force`
+- If the script was downloaded from the internet, unblock the file:
+  - `Unblock-File -Path .\run.ps1`
+- Run a script once without changing the global policy:
+  - `powershell -ExecutionPolicy Bypass -File .\run.ps1`
+  - or `pwsh -NoProfile -ExecutionPolicy Bypass -File .\run.ps1`
+- The error "running scripts is disabled on this system" usually indicates a strict execution policy; adjust using the steps above.
