@@ -44,6 +44,13 @@ DayZDevelopmentTool/
 - 使用 SteamCMD 安装的 `DayZServer` 默认不会包含 `mpmissions`；需从官方仓库下载并放入 `DayZServer/mpmissions`：
   - 仓库地址：[BohemiaInteractive/DayZ-Central-Economy](https://github.com/BohemiaInteractive/DayZ-Central-Economy)
   - 下载官方三张地图任务并置于 `DayZServer/mpmissions`（重要）。
+- 如果你在模组开发中输出的脚本日志包含中文. 那么在vscode的powershell终端中会显示乱码.
+  - 解决办法: win10 - win11
+    - Win+i打开系统设置
+    - 左侧菜单列表选择 时间与语言 ==> 语言和区域
+    - 相关设置中, 找到 管理语言设置
+    - 在弹出的窗口中, 点击 管理 ==> 更改系统区域设置 ==> 勾选 Beta 版本
+    - 点击确定, 会提示你重启系统. 重启后, 中文就可以正常显示了.
 
 ## 配置
 - 克隆路径不要包含中文、空格或连字符（`-`）。
