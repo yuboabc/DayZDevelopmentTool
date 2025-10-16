@@ -1,0 +1,17 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Kill-all-ps",
+            "type": "shell",
+            "command": "${workspaceFolder}/killAll.ps1",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "never",
+                "revealProblems": "never",
+                "clear": true,
+                "echo": false
+            }
+        }
+    ]
+}

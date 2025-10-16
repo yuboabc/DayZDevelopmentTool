@@ -1,0 +1,65 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "PS::C\\S-服务端-车臣尼亚",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "${workspaceFolder}/run.ps1 server chernarusplus",
+            "cwd": "${workspaceFolder}",
+            "postDebugTask": "Kill-all-ps",
+            "internalConsoleOptions": "neverOpen",
+            "autoAttachChildProcesses": false
+        },
+        {
+            "type": "node-terminal",
+            "request": "launch",
+            "name": "PS::C\\S-服务端-利沃尼亚",
+            "command": "${workspaceFolder}/run.ps1 server enoch",
+            "cwd": "${workspaceFolder}",
+            "postDebugTask": "Kill-all-ps",
+            "internalConsoleOptions": "neverOpen",
+            "autoAttachChildProcesses": false
+        },
+        {
+            "type": "node-terminal",
+            "request": "launch",
+            "name": "PS::C\\S-服务端-雪图",
+            "command": "${workspaceFolder}/run.ps1 server sakhal",
+            "cwd": "${workspaceFolder}",
+            "postDebugTask": "Kill-all-ps",
+            "internalConsoleOptions": "neverOpen",
+            "autoAttachChildProcesses": false
+        },
+        {
+            "name": "PS::C\\S-客户端-车臣尼亚",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "${workspaceFolder}/run.ps1 client chernarusplus",
+            "cwd": "${workspaceFolder}",
+            "postDebugTask": "Kill-all-ps",
+            "internalConsoleOptions": "neverOpen",
+            "autoAttachChildProcesses": false
+        },
+        {
+            "type": "node-terminal",
+            "request": "launch",
+            "name": "PS::C\\S-客户端-利沃尼亚",
+            "command": "${workspaceFolder}/run.ps1 client enoch",
+            "cwd": "${workspaceFolder}",
+            "postDebugTask": "Kill-all-ps",
+            "internalConsoleOptions": "neverOpen",
+            "autoAttachChildProcesses": false
+        },
+        {
+            "type": "node-terminal",
+            "request": "launch",
+            "name": "PS::C\\S-客户端-雪图",
+            "command": "${workspaceFolder}/run.ps1 client sakhal",
+            "cwd": "${workspaceFolder}",
+            "postDebugTask": "Kill-all-ps",
+            "internalConsoleOptions": "neverOpen",
+            "autoAttachChildProcesses": false
+        }
+    ]
+}
