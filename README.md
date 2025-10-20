@@ -35,6 +35,7 @@ DayZDevelopmentTool/
 │   ├── CLIENT_MOD/               # 客户端模组源代码
 │   └── SERVER_MOD/               # 服务端模组源代码
 ├── config.json                   # 项目配置
+├── modinit.ps1                   # 初始化模组目录结构
 ├── killAll.ps1                   # 终止所有 DayZ 相关进程
 └── run.ps1                       # 启动 DayZServer 与 DayZ 客户端
 ```

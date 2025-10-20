@@ -35,6 +35,7 @@ DayZDevelopmentTool/
 │   ├── CLIENT_MOD/               # Client mod source
 │   └── SERVER_MOD/               # Server mod source
 ├── config.json                   # Tool configuration
+├── modinit.ps1                   # Initialize mod directory structure
 ├── killAll.ps1                   # Kill all DayZ processes
 └── run.ps1                       # Launch DayZServer and DayZ client
 ```
